@@ -1,0 +1,56 @@
+@import './functions';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	&::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+		border-radius: 16px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: get-color(background-secondary);
+		border-radius: 16px;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background: get-color(background-secondary-hovered);
+	}
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'SourceSans3', 'sans-serif';
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5rem;
+	color: get-color(text-primary);
+	background: get-color(background-surface);
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	color: inherit;
+}

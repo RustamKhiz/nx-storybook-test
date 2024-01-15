@@ -1,0 +1,13 @@
+@import 'libs/ui-kit/stylesheet/src/lib/assets/styles/index.scss';
+
+html {
+  @include toggleTheme(light);
+}
+
+// html[theme='light'] {
+//   @include toggleTheme(light);
+// }
+
+// html[theme='dark'] {
+//   @include toggleTheme(dark);
+// }

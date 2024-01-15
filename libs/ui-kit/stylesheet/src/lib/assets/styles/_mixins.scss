@@ -1,0 +1,21 @@
+@import './themes';
+
+@mixin fontFace($name, $nameFile, $weight, $style: normal, $display: swap) {
+  @font-face {
+    font-family: $name;
+    src: url('../fonts/' + '/' + $name + '/' + $nameFile + '.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: $display;
+  }
+}
+
+@mixin toggleTheme($mode) {
+  @each $key, $map in $themes {
+    @each $prop, $color in $map {
+      @if $prop == $mode {
+        --#{$key}: #{$color};
+      }
+    }
+  }
+}

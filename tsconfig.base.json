@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-storybook-test-2/button": ["libs/ui-kit/button/src/index.ts"]
+      "@nx-storybook-test-2/button": ["libs/ui-kit/button/src/index.ts"],
+      "@nx-storybook-test-2/stylesheet": ["libs/ui-kit/stylesheet/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
