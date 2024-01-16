@@ -1,0 +1,12 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+
+<Meta title="Buttons/Button/Documentation" />
+
+```html
+<button euiButton [color]="color" [size]="size" [disabled]="disabled">
+	<ng-container *ngIf="icon">
+		<eui-icons name="check"></eui-icons>
+	</ng-container>
+	{{label}}
+</button>
+```

@@ -1,0 +1,202 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/functions';
+
+:host {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	padding: 0 12px !important;
+	border-radius: 8px;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	cursor: pointer;
+	transition: $anim-transition;
+
+	// SIZE
+	&.eui-btn__md {
+		height: 40px;
+	}
+
+	&.eui-btn__sm {
+		height: 32px;
+	}
+
+	&.eui-btn__md {
+		::ng-deep svg {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&.eui-btn__sm {
+		gap: 4px;
+
+		::ng-deep svg {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	&:focus-visible {
+		outline: 1px solid get-color(border-focused);
+	}
+
+	// COLORS
+	&.eui-btn__primary {
+		background-color: get-color(background-accent-subtle);
+		color: get-color(text-contrast);
+		border: 1px solid get-color(background-accent-subtle);
+
+		::ng-deep svg * {
+			fill: get-color(icon-contrast);
+			transition: $anim-transition;
+		}
+
+		&:hover {
+			background-color: get-color(background-accent-bolder);
+			border: 1px solid get-color(background-accent-bolder);
+		}
+
+		&:disabled {
+			cursor: default;
+			pointer-events: none;
+			background-color: get-color(background-island);
+			color: get-color(text-subtlest);
+			border: none;
+			border: 1px solid get-color(border-primary);
+
+			::ng-deep svg * {
+				fill: get-color(icon-disabled);
+			}
+		}
+	}
+
+	&.eui-btn__secondary {
+		background-color: get-color(background-surface-overlay);
+		color: get-color(text-primary);
+		border: 1px solid get-color(border-primary);
+
+		::ng-deep svg * {
+			fill: get-color(icon-primary);
+			transition: $anim-transition;
+		}
+
+		&:hover {
+			background-color: get-color(background-surface-overlay);
+			color: get-color(text-accent);
+			border: 1px solid get-color(border-accent);
+
+			outline: none;
+
+			::ng-deep svg * {
+				fill: get-color(icon-accent);
+				transition: $anim-transition;
+			}
+		}
+
+		&:disabled {
+			cursor: default;
+			pointer-events: none;
+			background-color: get-color(background-island);
+			color: get-color(text-subtlest);
+			border: 1px solid get-color(border-primary);
+
+			::ng-deep svg * {
+				fill: get-color(icon-disabled);
+			}
+		}
+	}
+
+	&.eui-btn__error {
+		background-color: get-color(background-error);
+		color: get-color(text-contrast);
+		border: 1px solid get-color(border-error);
+
+		::ng-deep svg * {
+			fill: get-color(icon-contrast);
+			transition: $anim-transition;
+		}
+
+		&:hover {
+			background-color: get-color(background-error-hovered);
+			border: 1px solid get-color(background-error-hovered);
+		}
+
+		&:disabled {
+			cursor: default;
+			pointer-events: none;
+			background-color: get-color(background-island);
+			color: get-color(text-subtlest);
+			border: none;
+			border: 1px solid get-color(border-primary);
+
+			::ng-deep svg * {
+				fill: get-color(icon-disabled);
+			}
+		}
+	}
+
+	&.eui-btn__fade {
+		color: get-color(text-accent);
+		border: none;
+		background-color: unset;
+		::ng-deep svg * {
+			fill: get-color(icon-accent);
+			transition: $anim-transition;
+		}
+
+		&:hover {
+			color: get-color(text-accent-hovered);
+
+			::ng-deep svg * {
+				fill: get-color(icon-accent-hovered);
+				transition: $anim-transition;
+			}
+		}
+
+		&:disabled {
+			cursor: default;
+			pointer-events: none;
+			background-color: get-color(background-island);
+			color: get-color(text-subtlest);
+			border: 1px solid get-color(border-primary);
+
+			::ng-deep svg * {
+				fill: get-color(icon-disabled);
+			}
+		}
+	}
+
+	&.eui-btn__transparent {
+		background-color: transparent;
+		color: get-color(text-accent);
+		border: 1px solid transparent;
+
+		::ng-deep svg * {
+			fill: get-color(icon-accent);
+			transition: $anim-transition;
+		}
+
+		&:hover {
+			color: get-color(text-accent-hovered);
+
+			::ng-deep svg * {
+				fill: get-color(icon-accent-hovered);
+				transition: $anim-transition;
+			}
+		}
+
+		&:disabled {
+			cursor: default;
+			pointer-events: none;
+			color: get-color(text-subtlest);
+
+			::ng-deep svg * {
+				fill: get-color(icon-disabled);
+			}
+		}
+	}
+}
