@@ -16,6 +16,55 @@
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/ui-kit/.storybook",
+        "browserTarget": "ui-kit:build-storybook",
+        "compodoc": false,
+        "styles": ["apps/nx-storybook-test-2/src/styles.scss"]
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/ui-kit",
+        "configDir": "libs/ui-kit/.storybook",
+        "browserTarget": "ui-kit:build-storybook",
+        "compodoc": false,
+        "styles": ["apps/nx-storybook-test-2/src/styles.scss"]
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "test-storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "test-storybook -c libs/ui-kit/.storybook --url=http://localhost:4400"
+      }
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "ui-kit:build-storybook",
+        "staticFilePath": "dist/storybook/ui-kit"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "ui-kit:build-storybook:ci"
+        }
+      }
     }
   }
 }
