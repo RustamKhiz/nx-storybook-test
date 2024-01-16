@@ -1,0 +1,252 @@
+@import './themes/theme-light';
+@import './themes/theme-dark';
+$themes: (
+	text-menu-secondary: (
+		light: $color-light-text-menu-secondary,
+		dark: $color-dark-text-menu-secondary,
+	),
+	text-error-hovered: (
+		light: $color-light-text-error-hovered,
+		dark: $color-dark-text-error-hovered,
+	),
+	text-accent-magenta: (
+		light: $color-light-text-accent-magenta,
+		dark: $color-dark-text-accent-magenta,
+	),
+	text-accent-green: (
+		light: $color-light-text-accent-green,
+		dark: $color-dark-text-accent-green,
+	),
+	text-subtlest: (
+		light: $color-light-text-subtlest,
+		dark: $color-dark-text-subtlest,
+	),
+	text-subtler: (
+		light: $color-light-text-subtler,
+		dark: $color-dark-text-subtler,
+	),
+	text-accent-red: (
+		light: $color-light-text-accent-red,
+		dark: $color-dark-text-accent-red,
+	),
+	text-contrast: (
+		light: $color-light-text-contrast,
+		dark: $color-dark-text-contrast,
+	),
+	text-accent-purple: (
+		light: $color-light-text-accent-purple,
+		dark: $color-dark-text-accent-purple,
+	),
+	text-accent: (
+		light: $color-light-text-accent,
+		dark: $color-dark-text-accent,
+	),
+	text-error: (
+		light: $color-light-text-error,
+		dark: $color-dark-text-error,
+	),
+	text-menu: (
+		light: $color-light-text-menu,
+		dark: $color-dark-text-menu,
+	),
+	text-accent-cyan: (
+		light: $color-light-text-accent-cyan,
+		dark: $color-dark-text-accent-cyan,
+	),
+	text-primary: (
+		light: $color-light-text-primary,
+		dark: $color-dark-text-primary,
+	),
+	text-accent-blue: (
+		light: $color-light-text-accent-blue,
+		dark: $color-dark-text-accent-blue,
+	),
+	text-accent-hovered: (
+		light: $color-light-text-accent-hovered,
+		dark: $color-dark-text-accent-hovered,
+	),
+	text-accent-orange: (
+		light: $color-light-text-accent-orange,
+		dark: $color-dark-text-accent-orange,
+	),
+	text-accent-yellow: (
+		light: $color-light-text-accent-yellow,
+		dark: $color-dark-text-accent-yellow,
+	),
+	background-menu: (
+		light: $color-light-background-menu,
+		dark: $color-dark-background-menu,
+	),
+	background-surface-overlay: (
+		light: $color-light-background-surface-overlay,
+		dark: $color-dark-background-surface-overlay,
+	),
+	background-accent-orange: (
+		light: $color-light-background-accent-orange,
+		dark: $color-dark-background-accent-orange,
+	),
+	background-accent-magenta: (
+		light: $color-light-background-accent-magenta,
+		dark: $color-dark-background-accent-magenta,
+	),
+	background-accent-yellow: (
+		light: $color-light-background-accent-yellow,
+		dark: $color-dark-background-accent-yellow,
+	),
+	background-accent-green: (
+		light: $color-light-background-accent-green,
+		dark: $color-dark-background-accent-green,
+	),
+	background-accent-red: (
+		light: $color-light-background-accent-red,
+		dark: $color-dark-background-accent-red,
+	),
+	background-secondary-hovered: (
+		light: $color-light-background-secondary-hovered,
+		dark: $color-dark-background-secondary-hovered,
+	),
+	background-secondary: (
+		light: $color-light-background-secondary,
+		dark: $color-dark-background-secondary,
+	),
+	background-error-hovered: (
+		light: $color-light-background-error-hovered,
+		dark: $color-dark-background-error-hovered,
+	),
+	background-error: (
+		light: $color-light-background-error,
+		dark: $color-dark-background-error,
+	),
+	background-accent-subtlest: (
+		light: $color-light-background-accent-subtlest,
+		dark: $color-dark-background-accent-subtlest,
+	),
+	background-accent-subtle: (
+		light: $color-light-background-accent-subtle,
+		dark: $color-dark-background-accent-subtle,
+	),
+	background-surface: (
+		light: $color-light-background-surface,
+		dark: $color-dark-background-surface,
+	),
+	background-tooltip: (
+		light: $color-light-background-tooltip,
+		dark: $color-dark-background-tooltip,
+	),
+	background-accent-bolder: (
+		light: $color-light-background-accent-bolder,
+		dark: $color-dark-background-accent-bolder,
+	),
+	background-accent-purple: (
+		light: $color-light-background-accent-purple,
+		dark: $color-dark-background-accent-purple,
+	),
+	background-modal: (
+		light: $color-light-background-modal,
+		dark: $color-dark-background-modal,
+	),
+	background-accent-cyan: (
+		light: $color-light-background-accent-cyan,
+		dark: $color-dark-background-accent-cyan,
+	),
+	background-island: (
+		light: $color-light-background-island,
+		dark: $color-dark-background-island,
+	),
+	background-accent-blue: (
+		light: $color-light-background-accent-blue,
+		dark: $color-dark-background-accent-blue,
+	),
+	border-error: (
+		light: $color-light-border-error,
+		dark: $color-dark-border-error,
+	),
+	border-accent-hovered: (
+		light: $color-light-border-accent-hovered,
+		dark: $color-dark-border-accent-hovered,
+	),
+	border-accent: (
+		light: $color-light-border-accent,
+		dark: $color-dark-border-accent,
+	),
+	border-hovered: (
+		light: $color-light-border-hovered,
+		dark: $color-dark-border-hovered,
+	),
+	border-primary: (
+		light: $color-light-border-primary,
+		dark: $color-dark-border-primary,
+	),
+	border-secondary: (
+		light: $color-light-border-secondary,
+		dark: $color-dark-border-secondary,
+	),
+	border-focused: (
+		light: $color-light-border-focused,
+		dark: $color-dark-border-focused,
+	),
+	icon-accent-cyan: (
+		light: $color-light-icon-accent-cyan,
+		dark: $color-dark-icon-accent-cyan,
+	),
+	icon-accent-orange: (
+		light: $color-light-icon-accent-orange,
+		dark: $color-dark-icon-accent-orange,
+	),
+	icon-accent-magenta: (
+		light: $color-light-icon-accent-magenta,
+		dark: $color-dark-icon-accent-magenta,
+	),
+	icon-accent-purple: (
+		light: $color-light-icon-accent-purple,
+		dark: $color-dark-icon-accent-purple,
+	),
+	icon-accent-green: (
+		light: $color-light-icon-accent-green,
+		dark: $color-dark-icon-accent-green,
+	),
+	icon-error-hovered: (
+		light: $color-light-icon-error-hovered,
+		dark: $color-dark-icon-error-hovered,
+	),
+	icon-disabled: (
+		light: $color-light-icon-disabled,
+		dark: $color-dark-icon-disabled,
+	),
+	icon-accent: (
+		light: $color-light-icon-accent,
+		dark: $color-dark-icon-accent,
+	),
+	icon-accent-hovered: (
+		light: $color-light-icon-accent-hovered,
+		dark: $color-dark-icon-accent-hovered,
+	),
+	icon-contrast: (
+		light: $color-light-icon-contrast,
+		dark: $color-dark-icon-contrast,
+	),
+	icon-primary: (
+		light: $color-light-icon-primary,
+		dark: $color-dark-icon-primary,
+	),
+	icon-secondary: (
+		light: $color-light-icon-secondary,
+		dark: $color-dark-icon-secondary,
+	),
+	icon-error: (
+		light: $color-light-icon-error,
+		dark: $color-dark-icon-error,
+	),
+	icon-accent-red: (
+		light: $color-light-icon-accent-red,
+		dark: $color-dark-icon-accent-red,
+	),
+	icon-accent-yellow: (
+		light: $color-light-icon-accent-yellow,
+		dark: $color-dark-icon-accent-yellow,
+	),
+	icon-accent-blue: (
+		light: $color-light-icon-accent-blue,
+		dark: $color-dark-icon-accent-blue,
+	),
+);
