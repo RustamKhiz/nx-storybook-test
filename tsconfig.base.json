@@ -19,7 +19,8 @@
       "@nx-storybook-test-2/stylesheet": [
         "libs/ui-kit/stylesheet/src/index.ts"
       ],
-      "@nx-storybook-test-2/toggle": ["libs/ui-kit/toggle/src/index.ts"]
+      "@nx-storybook-test-2/toggle": ["libs/ui-kit/toggle/src/index.ts"],
+      "@nx-storybook-test-2/ui-kit": ["libs/ui-kit/storybook/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
