@@ -1,0 +1,5 @@
+@import 'libs/stylesheet/src/lib/assets/styles/index.scss';
+
+html {
+  @include toggleTheme(light);
+}
