@@ -28,6 +28,7 @@
     "@angular/cli": "~17.0.0",
     "@angular/compiler-cli": "~17.0.0",
     "@angular/language-service": "~17.0.0",
+    "@nrwl/storybook": "^17.2.8",
     "@nx/cypress": "17.2.8",
     "@nx/eslint": "17.2.8",
     "@nx/eslint-plugin": "17.2.8",
