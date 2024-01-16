@@ -18,6 +18,7 @@
       "@nx-storybook-test-2/button": [
         "libs/ui-kit/src/lib/button/src/index.ts"
       ],
+      "@nx-storybook-test-2/stylesheet": ["libs/stylesheet/src/index.ts"],
       "@nx-storybook-test-2/toggle": [
         "libs/ui-kit/src/lib/toggle/src/index.ts"
       ],
